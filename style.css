@@ -221,6 +221,15 @@ body{
         height: 100vh;
     }
 }
+@media screen and (max-width: 425px) {
+    .header {
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+    .container .header  {
+        font-size: 13px;
+    }
+}
 
 
 
