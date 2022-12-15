@@ -43,31 +43,23 @@ body{
     cursor: pointer;
 }
 .slider {
-    height: 70vh;
+    width: 100%;
+    /* height: 70vh; */
+    min-height: 70vh;
+    max-height: 200vh;
     color: white;
     border-radius: 10px;
     text-align: center;
     background-image: linear-gradient(to bottom, rgba(14, 165, 233, 0.80), rgba(0, 0, 0, 0.60)), url("https://cdn.balad.ir/crowd-images/all/original/b7454c6e5a984782b677993f161bc720-20220822_234811.jpg?x-img=v1/crop,x_0,y_482,w_1440,h_810/autorotate");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-}
-.slider .line-1 {
+    padding: 10px;
+    list-style: none;
     font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.slider .line-2 {
-    color: yellow;
-    font-weight: bold;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-.slider .line-3 {
-    font-size: 30px;
+    
 }
 .introduction {
     background-color: rgb(243, 244, 246);
@@ -103,7 +95,7 @@ body{
     width: 30px;
 }
 .hamian {
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 .hamian h3 {
     text-align: center;
@@ -112,12 +104,12 @@ body{
     color: gray;
 }
 .hamian ul {
+    height: auto;
     /* margin: auto; */
     display: grid;
-    grid-template-columns: repeat(5 , 12%);
-    grid-gap: 8%;
+    grid-template-columns: repeat(5 , 15%);
+    /* grid-gap: 7%; */
     justify-content: center;
-
 }
 .hamian li {
     display: flex;
@@ -211,22 +203,61 @@ body{
 /* media */
 
 @media screen and (max-width: 768px) {
+    .hamian ul {
+        grid-template-columns: repeat(4 , 20%);
+    }
     .container {
-        width: 90%;
+        width: 95%;
     }
     .header button {
         background-color: white;
     }
     .slider {
         height: 100vh;
+        font-size: 30px;
+    }
+    .introduction .container {
+        flex-direction: column;
+    }
+    .right {
+        width: 100%;
+    }
+    .left {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
 @media screen and (max-width: 425px) {
+    .hamian ul {
+        grid-template-columns: repeat(3 , 32%);
+    }
     .header {
         flex-direction: column;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
     }
     .container .header  {
+        font-size: 13px;
+    }
+    .slider {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 375px)  {
+    .hamian ul {
+        grid-template-columns: repeat(2 , 50%);
+    }
+}
+@media screen and (max-width: 320px) {
+    .hamian ul {
+        grid-template-columns: repeat(1 , 75%);
+    }
+    .header {
+        padding-bottom: 0px;
+    }
+    .container .header  {
+        font-size: 10px;
+    } 
+    .slider {
         font-size: 13px;
     }
 }
