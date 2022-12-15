@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "iranyekan" ;
+    src: url("fonts/iranyekan/eot/iranyekanwebregular.eot?#") ,
+    url("fonts/iranyekan/ttf/iranyekanwebregular.ttf") format('truetype'),
+    url("fonts/iranyekan/woff/iranyekanwebregular.woff") format('woff'),
+    url("fonts/iranyekan/svg/iranyekanwebregular.svg") format('svg');
+}
+@font-face {
+    font-family: "iranyekan_numbers" ;
+    src: url("fonts/iranyekan_numbers/eot/iranyekanwebregular(fanum).eot?#") ,
+    url("fonts/iranyekan_numbers/ttf/iranyekanwebregular(fanum).ttf") format('truetype'),
+    url("fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
+    url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
+}
+body{
+    direction: rtl;
+    font-family: 'iranyekan_numbers','iranyekan';
+}
+.container {
+    width: 75%;
+    margin: auto;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header button {
+    color: white;
+    background-color: rgb(14, 165, 233);
+    padding: 12px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.slider {
+    height: 70vh;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(14, 165, 233, 0.80), rgba(0, 0, 0, 0.60)), url("https://cdn.balad.ir/crowd-images/all/original/b7454c6e5a984782b677993f161bc720-20220822_234811.jpg?x-img=v1/crop,x_0,y_482,w_1440,h_810/autorotate");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.slider .line-1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.slider .line-2 {
+    color: yellow;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.slider .line-3 {
+    font-size: 30px;
+}
+.introduction {
+    background-color: rgb(243, 244, 246);
+}
+.introduction .container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+.right {
+    width: 35%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.right ul li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+.right img {
+    width: 100%;
+}
+.left {
+    width: 55%;
+    margin-top: 30px;
+}
+.left li {
+    list-style: none;
+    margin-top: 30px;
+}
+.left svg {
+    color: green;
+    width: 30px;
+}
+.hamian {
+    padding-bottom: 100px;
+}
+.hamian h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: gray;
+}
+.hamian ul {
+    /* margin: auto; */
+    display: grid;
+    grid-template-columns: repeat(5 , 12%);
+    grid-gap: 8%;
+    justify-content: center;
+
+}
+.hamian li {
+    display: flex;
+    flex-direction: column;
+}
+.hamian label {
+    word-break: break-word;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+}
+.team {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-top: 25%;
+    background-color: rgb(243, 244, 246);
+}
+.team .container ul label {
+    font-size: 25px;
+    font-weight: bold;
+}
+.team ul li {
+    margin-top: 20px;
+    font-size: 18px;
+    list-style: circle;
+}
+.information {
+    width: 100%;
+    height: 550px;
+    background-image:  linear-gradient(to bottom, rgb(0, 0, 0), rgba(2, 132, 199, 0.73)), url('https://cdn.balad.ir/crowd-images/all/original/f8fa33dcc7aa4bff8e09b3a8bfa47556-20220822_234734.jpg?x-img=v1/format,type_webp,lossless_false/autorotate');
+    background-size: cover;
+    background-position: left;
+    color: white;
+    padding-top: 5%;
+}
+.information ul {
+    padding-top: 25px;
+}
+.information h5 {
+    font-size: 30px;
+    margin-right: 10%;
+}
+.information li {
+    list-style: none;
+    margin-right: 12%;
+    display: flex;
+    flex-direction: row;
+}
+.information label {
+    font-size: 22px;
+}
+.information .container  li svg {
+    width: 70px; 
+}
+.footer {
+    padding-top: 50px;
+    background-color: rgb(243, 244, 246);
+}
+.footer .row {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin-bottom: 20px;
+}
+.footer .row h5 {
+    color: rgb(83, 82, 82);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.right-2 li {
+    list-style: none;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.left-2 li {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.left-2 li svg {
+    color: rgb(83, 82, 82);
+    width: 10px;
+    margin-left: 10px;
+}
+.footer .container ul.last li {
+    padding-bottom: 40px;
+}
+
+/* media */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .header button {
+        background-color: white;
+    }
+    .slider {
+        height: 100vh;
+    }
+}
+
+
+
+
