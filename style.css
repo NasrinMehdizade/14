@@ -223,6 +223,10 @@ img {
     margin-right: 15px;
     margin-bottom: 10px;
 }
+.left-2 li a {
+    color: black;
+    text-decoration: none;
+}
 .left-2 li svg {
     color: rgb(156, 163, 175);
     width: 12px;
