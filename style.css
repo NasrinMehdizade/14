@@ -4,27 +4,28 @@
     box-sizing: border-box;
 }
 @font-face {
-    font-family: "iranyekan" ;
-    src: url("fonts/iranyekan/eot/iranyekanwebregular.eot?#") ,
-    url("fonts/iranyekan/ttf/iranyekanwebregular.ttf") format('truetype'),
-    url("fonts/iranyekan/woff/iranyekanwebregular.woff") format('woff'),
-    url("fonts/iranyekan/svg/iranyekanwebregular.svg") format('svg');
+    font-family: 'vazir';
+    src: url('./font2/Vazir-Bold.eot') format('eot') ,
+         url('./font2/Vazir.ttf') format('truetype') ,
+         url('./font2/Vazir.woff') format('woff') , 
+         url('./font2/Vazir.woff2') format('woff2');
 }
-@font-face {
-    font-family: "iranyekan_numbers" ;
-    src: url("fonts/iranyekan_numbers/eot/iranyekanwebregular(fanum).eot?#") ,
-    url("fonts/iranyekan_numbers/ttf/iranyekanwebregular(fanum).ttf") format('truetype'),
-    url("fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
-    url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
-}
-body{
+body {
     direction: rtl;
-    font-family: 'iranyekan_numbers','iranyekan';
+    font-family: 'vazir';
+}
+li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
 }
 .container {
-    width: 75%;
+    width: 80%;
     margin: auto;
 }
+
+/* header */
 .header {
     display: flex;
     flex-direction: row;
@@ -32,35 +33,55 @@ body{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.header button {
+.header h1 {
+    font-size: 20px;
+}
+.header a {
+    text-decoration: none;
     color: white;
     background-color: rgb(14, 165, 233);
-    padding: 12px;
+    padding: 12px 20px;
     border-radius: 10px;
     outline: none;
     border: none;
     font-weight: bold;
     cursor: pointer;
+    font-family: 'vazir';
 }
+.header button:hover {
+    background-color: rgb(50, 122, 155);
+    transition: all 0.3s ease-out;
+}
+
+/* slider */
 .slider {
     width: 100%;
-    /* height: 70vh; */
-    min-height: 70vh;
-    max-height: 200vh;
+    min-height: 400px;
+    height: 70vh;
     color: white;
     border-radius: 10px;
     text-align: center;
-    background-image: linear-gradient(to bottom, rgba(14, 165, 233, 0.80), rgba(0, 0, 0, 0.60)), url("https://cdn.balad.ir/crowd-images/all/original/b7454c6e5a984782b677993f161bc720-20220822_234811.jpg?x-img=v1/crop,x_0,y_482,w_1440,h_810/autorotate");
+    background-image: linear-gradient(to bottom , rgba(14, 165, 233, 0.80) , rgba(0, 0, 0, 0.60)) , url("./photo_2022-12-15_13-40-35.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-    list-style: none;
-    font-size: 50px;
-    
 }
+.slider h1 {
+    font-size: 50px;
+}
+.slider h2 {
+    font-size: 40px;
+    color: yellow;
+}
+.slider h3 {
+    font-size: 30px;
+}
+
+/* introduction */
 .introduction {
     background-color: rgb(243, 244, 246);
 }
@@ -70,33 +91,40 @@ body{
     flex-direction: row;
     gap: 10%;
 }
+.introduction .container .right ul li.list-1 {
+    color: red;
+}
 .right {
     width: 35%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+.right h3 {
+    margin-bottom: 20px;
+}
 .right ul li {
     margin-bottom: 20px;
-    list-style: none;
 }
 .right img {
-    width: 100%;
+    max-width: 100%;
 }
 .left {
     width: 55%;
     margin-top: 30px;
 }
+.left ul {
+    margin-top: 20px;
+}
 .left li {
-    list-style: none;
-    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .left svg {
     color: green;
-    width: 30px;
+    width: 25px;
+    vertical-align: middle;
 }
-.hamian {
-    /* padding-bottom: 100px; */
-}
+
+/* hamian */
 .hamian h3 {
     text-align: center;
     margin-bottom: 40px;
@@ -105,7 +133,6 @@ body{
 }
 .hamian ul {
     height: auto;
-    /* margin: auto; */
     display: grid;
     grid-template-columns: repeat(5 , 15%);
     grid-column-gap: 7%;
@@ -122,6 +149,8 @@ body{
     font-weight: bold;
     text-align: center;
 }
+
+/* team */
 .team {
     width: 100%;
     padding-top: 20px;
@@ -129,7 +158,7 @@ body{
     margin-top: 100px;
     background-color: rgb(243, 244, 246);
 }
-.team .container ul label {
+.team .container  label {
     font-size: 25px;
     font-weight: bold;
 }
@@ -138,6 +167,8 @@ body{
     font-size: 18px;
     list-style: circle;
 }
+
+/* information */
 .information {
     width: 100%;
     height: 550px;
@@ -146,17 +177,16 @@ body{
     background-position: left;
     color: white;
     padding-top: 5%;
+    background-attachment: fixed;
 }
 .information ul {
     padding-top: 25px;
 }
 .information h5 {
     font-size: 30px;
-    margin-right: 10%;
 }
 .information li {
-    list-style: none;
-    margin-right: 12%;
+    margin-right: 5%;
     display: flex;
     flex-direction: row;
 }
@@ -166,10 +196,11 @@ body{
 .information .container  li svg {
     width: 70px; 
 }
+
+/* footer */
 .footer {
     width: 100%;
-    padding-top: 50px;
-    background-color: rgb(243, 244, 246);
+    padding-top: 30px;
 }
 .footer .row {
     display: flex;
@@ -178,7 +209,7 @@ body{
     margin-bottom: 20px;
 }
 .footer .row h5 {
-    color: rgb(83, 82, 82);
+    color: rgb(156, 163, 175);
     font-size: 25px;
     margin-bottom: 20px;
 }
@@ -189,37 +220,49 @@ body{
 }
 
 .left-2 li {
-    /* display: flex;
-    flex-direction: row; */
     margin-right: 15px;
     margin-bottom: 10px;
-    list-style: none;
 }
 .left-2 li svg {
-    color: rgb(83, 82, 82);
+    color: rgb(156, 163, 175);
     width: 12px;
     margin-left: 10px;
 }
 .footer .container ul.last li {
-    padding-bottom: 40px;
+    padding-bottom: 15px;
+}
+.footer .last hr {
+    margin-bottom: 15px;
 }
 
 /* media */
-
 @media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
     .hamian ul {
         grid-template-columns: repeat(4 , 20%);
         grid-row-gap: 0;
     }
-    .container {
-        width: 95%;
+    .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
     }
-    .header button {
-        background-color: white;
+    .header h1 {
+    font-size: 18px;
     }
-    .slider {
-        height: 100vh;
+    .header a {
+        display: none;
+    }
+    .slider h1 {
+        font-size: 40px;
+    }
+    .slider h2 {
         font-size: 30px;
+        color: yellow;
+    }
+    .slider h3 {
+        font-size: 20px;
     }
     .introduction .container {
         flex-direction: column;
@@ -246,27 +289,54 @@ body{
     .information ul {
         padding-top: 30px;
     }
+    .footer {
+        padding-top: 0;
+    }
     .footer .row {
         flex-direction: column;
+    }
+    .footer .right-2 {
+        padding-top: 15px;
+    }
+    .footer .left-2 {
+        padding-top: 15px;
     }
     .left-2 li svg {
         width: 15px;
     }
 }
-@media screen and (max-width: 425px) {
+
+@media screen and (max-width: 600px) {
     .hamian ul {
         grid-template-columns: repeat(3 , 32%);
+        grid-column-gap: 2%;
     }
+}
+
+@media screen and (max-width: 425px) {
     .header {
         flex-direction: column;
         padding-bottom: 10px;
     }
-    .container .header  {
+    .header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    }    
+    .header h1 {
+    font-size: 16px;
+    }
+    .slider h1 {
+        font-size: 27px;
+    }
+    .slider h2 {
+        font-size: 22px;
+    }
+    .slider h3 {
+        font-size: 17px;
+    }
+    .container .header {
         font-size: 13px;
     }
-    .slider {
-        font-size: 20px;
-    } 
     .information h5 {
         font-size: 25px;
     }
@@ -277,24 +347,56 @@ body{
         font-size: 15px;
     }
 }
-@media screen and (max-width: 375px)  {
+
+@media screen and (max-width: 375px) {
+    .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    }      
+    .header h1 {
+    font-size: 14px;
+    }
     .hamian ul {
         grid-template-columns: repeat(2 , 50%);
     }
+    .slider h1 {
+        font-size: 26px;
+    }
+    .slider h2 {
+        font-size: 21px;
+    }
+    .slider h3 {
+        font-size: 16px;
+    }
 }
+
 @media screen and (max-width: 320px) {
+    .header {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    }         
+    .header h1 {
+    font-size: 12px;
+    }
     .hamian ul {
         grid-template-columns: repeat(1 , 75%);
     }
     .header {
         padding-bottom: 0px;
     }
-    .container .header  {
+    .slider h1 {
+        font-size: 25px;
+    }
+    .slider h2 {
+        font-size: 20px;
+        color: yellow;
+    }
+    .slider h3 {
+        font-size: 15px;
+    }
+    .container .header {
         font-size: 10px;
     } 
-    .slider {
-        font-size: 13px;
-    }
     .team .container ul label {
         font-size: 15px; 
     }
@@ -314,7 +416,3 @@ body{
         font-size: 10px;
     }
 }
-
-
-
-
