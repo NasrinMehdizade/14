@@ -213,10 +213,16 @@ img {
     font-size: 25px;
     margin-bottom: 20px;
 }
-.right-2 li {
+.right-2 ul {
+    display: flex;
+    flex-direction: column;
+}
+.right-2 a {
     list-style: none;
     margin-right: 15px;
     margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 .left-2 li {
