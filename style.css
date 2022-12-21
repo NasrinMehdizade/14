@@ -238,10 +238,6 @@ img {
     width: 12px;
     margin-left: 10px;
 }
-.left-2 .number {
-    display: flex;
-    flex-direction: row;
-}
 .footer .container ul.last li {
     padding-bottom: 15px;
 }
