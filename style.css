@@ -172,7 +172,7 @@ img {
 .information {
     width: 100%;
     height: 550px;
-    background-image:  linear-gradient(to bottom, rgb(0, 0, 0), rgba(2, 132, 199, 0.73)), url('https://cdn.balad.ir/crowd-images/all/original/f8fa33dcc7aa4bff8e09b3a8bfa47556-20220822_234734.jpg?x-img=v1/format,type_webp,lossless_false/autorotate');
+    background-image:  linear-gradient(to bottom, rgb(0, 0, 0), rgba(2, 132, 199, 0.73)), url('./f8fa33dcc7aa4bff8e09b3a8bfa47556-20220822_234734.webp');
     background-size: cover;
     background-position: left;
     color: white;
@@ -319,8 +319,8 @@ img {
         padding-bottom: 10px;
     }
     .header {
-    padding-top: 18px;
-    padding-bottom: 18px;
+        padding-top: 18px;
+        padding-bottom: 18px;
     }    
     .header h1 {
     font-size: 16px;
@@ -372,11 +372,11 @@ img {
 
 @media screen and (max-width: 320px) {
     .header {
-    padding-top: 14px;
-    padding-bottom: 14px;
+        padding-top: 14px;
+        padding-bottom: 14px;
     }         
     .header h1 {
-    font-size: 12px;
+        font-size: 12px;
     }
     .hamian ul {
         grid-template-columns: repeat(1 , 75%);
