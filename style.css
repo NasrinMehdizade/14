@@ -27,26 +27,26 @@ img {
 
 /* header */
 .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 .header h1 {
     font-size: 20px;
 }
 .header a {
-    text-decoration: none;
     color: white;
-    background-color: rgb(14, 165, 233);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
     padding: 12px 20px;
     border-radius: 10px;
-    outline: none;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
     font-family: 'vazir';
+    text-decoration: none;
+    background-color: rgb(14, 165, 233);
 }
 .header button:hover {
     background-color: rgb(50, 122, 155);
@@ -55,20 +55,20 @@ img {
 
 /* slider */
 .slider {
-    width: 100%;
-    min-height: 400px;
-    height: 70vh;
     color: white;
-    border-radius: 10px;
+    width: 100%;
+    height: 70vh;
+    padding: 10px;
+    display: flex;
+    min-height: 400px;
     text-align: center;
-    background-image: linear-gradient(to bottom , rgba(14, 165, 233, 0.80) , rgba(0, 0, 0, 0.60)) , url("./photo_2022-12-15_13-40-35.jpg");
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
+    background-image: linear-gradient(to bottom , rgba(14, 165, 233, 0.80) , rgba(0, 0, 0, 0.60)) , url("./photo_2022-12-15_13-40-35.jpg");
 }
 .slider h1 {
     font-size: 50px;
@@ -86,10 +86,10 @@ img {
     background-color: rgb(243, 244, 246);
 }
 .introduction .container {
+    gap: 10%;
     margin-top: 30px;
     display: flex;
     flex-direction: row;
-    gap: 10%;
 }
 .introduction .container .right ul li.list-1 {
     color: red;
@@ -119,43 +119,43 @@ img {
     margin-bottom: 20px;
 }
 .left svg {
-    color: green;
     width: 25px;
+    color: green;
     vertical-align: middle;
 }
 
 /* hamian */
 .hamian h3 {
+    color: gray;
+    margin-top: 30px;
     text-align: center;
     margin-bottom: 40px;
-    margin-top: 30px;
-    color: gray;
 }
 .hamian ul {
     height: auto;
     display: grid;
-    grid-template-columns: repeat(5 , 15%);
-    grid-column-gap: 7%;
     grid-row-gap: 1%;
+    grid-column-gap: 7%;
     justify-content: center;
+    grid-template-columns: repeat(5 , 15%);
 }
 .hamian li {
     display: flex;
     flex-direction: column;
 }
 .hamian label {
-    word-break: break-word;
     margin: auto;
     font-weight: bold;
     text-align: center;
+    word-break: break-word;
 }
 
 /* team */
 .team {
     width: 100%;
+    margin-top: 100px;
     padding-top: 20px;
     padding-bottom: 50px;
-    margin-top: 100px;
     background-color: rgb(243, 244, 246);
 }
 .team .container  label {
@@ -163,8 +163,8 @@ img {
     font-weight: bold;
 }
 .team ul li {
-    margin-top: 20px;
     font-size: 18px;
+    margin-top: 20px;
     list-style: circle;
 }
 
@@ -172,12 +172,12 @@ img {
 .information {
     width: 100%;
     height: 550px;
-    background-image:  linear-gradient(to bottom, rgb(0, 0, 0), rgba(2, 132, 199, 0.73)), url('./f8fa33dcc7aa4bff8e09b3a8bfa47556-20220822_234734.webp');
-    background-size: cover;
-    background-position: left;
     color: white;
     padding-top: 5%;
+    background-size: cover;
+    background-position: left;
     background-attachment: fixed;
+    background-image:  linear-gradient(to bottom, rgb(0, 0, 0), rgba(2, 132, 199, 0.73)), url('./f8fa33dcc7aa4bff8e09b3a8bfa47556-20220822_234734.webp');
 }
 .information ul {
     padding-top: 25px;
@@ -186,8 +186,8 @@ img {
     font-size: 30px;
 }
 .information li {
-    margin-right: 5%;
     display: flex;
+    margin-right: 5%;
     flex-direction: row;
 }
 .information label {
@@ -203,26 +203,26 @@ img {
     padding-top: 30px;
 }
 .footer .row {
+    gap: 10%;
     display: flex;
     flex-direction: row;
-    gap: 10%;
     margin-bottom: 20px;
 }
 .footer .row h5 {
-    color: rgb(156, 163, 175);
     font-size: 25px;
     margin-bottom: 20px;
+    color: rgb(156, 163, 175);
 }
 .right-2 ul {
     display: flex;
     flex-direction: column;
 }
 .right-2 a {
+    color: black;
     list-style: none;
     margin-right: 15px;
     margin-bottom: 10px;
     text-decoration: none;
-    color: black;
 }
 
 .left-2 li {
@@ -234,9 +234,9 @@ img {
     text-decoration: none;
 }
 .left-2 li svg {
-    color: rgb(156, 163, 175);
     width: 12px;
     margin-left: 10px;
+    color: rgb(156, 163, 175);
 }
 .footer .container ul.last li {
     padding-bottom: 15px;
@@ -251,15 +251,15 @@ img {
         width: 90%;
     }
     .hamian ul {
-        grid-template-columns: repeat(4 , 20%);
         grid-row-gap: 0;
+        grid-template-columns: repeat(4 , 20%);
     }
     .header {
-    padding-top: 25px;
-    padding-bottom: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
     .header h1 {
-    font-size: 18px;
+        font-size: 18px;
     }
     .header a {
         display: none;
@@ -318,22 +318,22 @@ img {
 
 @media screen and (max-width: 600px) {
     .hamian ul {
-        grid-template-columns: repeat(3 , 32%);
         grid-column-gap: 2%;
+        grid-template-columns: repeat(3 , 32%);
     }
 }
 
 @media screen and (max-width: 425px) {
     .header {
-        flex-direction: column;
         padding-bottom: 10px;
+        flex-direction: column;
     }
     .header {
         padding-top: 18px;
         padding-bottom: 18px;
     }    
     .header h1 {
-    font-size: 16px;
+        font-size: 16px;
     }
     .slider h1 {
         font-size: 27px;
@@ -360,11 +360,11 @@ img {
 
 @media screen and (max-width: 375px) {
     .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }      
     .header h1 {
-    font-size: 14px;
+        font-size: 14px;
     }
     .hamian ul {
         grid-template-columns: repeat(2 , 50%);
